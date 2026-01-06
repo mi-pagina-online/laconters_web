@@ -1,46 +1,462 @@
-  <!DOCTYPE html>
-  <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laconters Music</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laconters Music - Productor Multimedia Profesional</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Fondo de partículas -->
+  <div class="particles" id="particles-js"></div>
 
-    <!-- Encabezado principal -->
-    <header class="header-principal">
-      <h1 class="titulo">LACONTERS MUSIC</h1>
-      <div class="logo-central">
-        <img src="images-index/icono.png" alt="Logo Laconters Music">
+  <!-- Encabezado principal -->
+  <header class="header-principal">
+    <div class="container">
+      <div class="logo-titulo">
+        <div class="logo-central">
+          <img src="images-index/icono.png" alt="Logo Laconters Music">
+        </div>
+        <h1 class="titulo">LACONTERS <span class="highlight">MUSIC</span></h1>
+        <p class="subtitulo">Productor Multimedia Profesional</p>
       </div>
+
       <!-- Redes sociales -->
       <div class="redes">
-        <a class="facebook" href="https://www.facebook.com/Lacontersdj" target="_blank">
-          <img src="images-index/facebook.png" alt="Facebook">
+        <a class="facebook" href="https://www.facebook.com/Lacontersdj" target="_blank" title="Facebook">
+          <i class="fab fa-facebook-f"></i>
         </a>
-        <a class="whatssap" href="https://wa.me/3123429413" target="_blank">
-          <img src="images-index/WhatsApp.svg.webp" alt="WhatsApp">
+        <a class="whatsapp" href="https://wa.me/3123429413" target="_blank" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a class="instagram" href="#" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="youtube" href="#" target="_blank" title="YouTube">
+          <i class="fab fa-youtube"></i>
         </a>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Barra secundaria -->
-    <section class="barra-secundaria">
-      <img src="images-index/0517.gif" alt="Animación DJ">
-    </section>
+  <!-- Sección Hero con llamada a la acción -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2>Transforma tus eventos con producción multimedia de calidad</span></h2>
+          <p>Producción musical, edición de video, fotografía profesional y soluciones audiovisuales para hacer de tu evento una experiencia única e inolvidable.</p>
+          <div class="cta-buttons">
+            <a href="#contacto" class="btn-primary">
+              <i class="fas fa-calendar-check"></i> Contactar Ahora
+            </a>
+            <a href="#servicios" class="btn-secondary">
+              <i class="fas fa-list-alt"></i> Ver Servicios
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="multimedia-animation">
+            <div class="animation-container">
+              <div class="audio-visual">
+                <div class="speaker left"></div>
+                <div class="sound-waves">
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                </div>
+                <div class="speaker right"></div>
+              </div>
+              <div class="camera-icon">
+                <i class="fas fa-camera"></i>
+              </div>
+              <div class="video-icon">
+                <i class="fas fa-video"></i>
+              </div>
+              <div class="music-icon">
+                <i class="fas fa-music"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Botones de navegación -->
-    <main class="contenedor">
-      <a href="VIDEOS/videos.html" class="boton-card">
-        <img src="images-index/videos.png" alt="Ir a videos">
-        <span>VIDEOS</span>
+  <!-- Barra de separación animada -->
+  <section class="barra-secundaria">
+    <div class="wave-container">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Servicios principales -->
+  <section class="servicios" id="servicios">
+    <div class="container">
+      <h2 class="section-title">Mis <span class="highlight">Servicios</span></h2>
+      <p class="section-subtitle">Ofrezco una variedad de servicios multimedia para cubrir todas las necesidades de tu evento</p>
+      
+      <div class="servicios-grid">
+        <div class="servicio-card">
+          <div class="servicio-icon">
+            <i class="fas fa-music"></i>
+          </div>
+          <h3>Producción Musical</h3>
+          <p>Creación de pistas originales, mezclas personalizadas y edición de audio profesional para tu evento.</p>
+        </div>
+        
+        <div class="servicio-card">
+          <div class="servicio-icon">
+            <i class="fas fa-video"></i>
+          </div>
+          <h3>Edición de Video</h3>
+          <p>Desde videoclips hasta cobertura completa de eventos, con efectos y transiciones profesionales.</p>
+        </div>
+        
+        <div class="servicio-card">
+          <div class="servicio-icon">
+            <i class="fas fa-camera"></i>
+          </div>
+          <h3>Fotografía Profesional</h3>
+          <p>Sesiones fotográficas y cobertura de eventos con edición y retoque de alta calidad.</p>
+        </div>
+        
+        <div class="servicio-card">
+          <div class="servicio-icon">
+            <i class="fas fa-sliders-h"></i>
+          </div>
+          <h3>Mezcla y Masterización</h3>
+          <p>Procesamiento y optimización de audio para obtener la mejor calidad sonora en tus producciones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería de trabajos -->
+  <main class="contenedor">
+    <h2 class="section-title">Mi <span class="highlight">Trabajo</span></h2>
+    <p class="section-subtitle">Explora algunos de mis proyectos y trabajos realizados</p>
+    
+    <div class="portfolio-grid">
+      <a href="VIDEOS/videos.html" class="portfolio-card">
+        <div class="portfolio-image">
+          <img src="images-index/videos.png" alt="Ir a videos">
+          <div class="portfolio-overlay">
+            <i class="fas fa-play-circle"></i>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <h3>VIDEOS</h3>
+          <p>Videoclips, eventos y producciones audiovisuales</p>
+          <span class="portfolio-link">Ver galería <i class="fas fa-arrow-right"></i></span>
+        </div>
       </a>
-      <a href="IMAGENES/IMAGENES.HTML" class="boton-card">
-        <img src="images-index/imagenes.png" alt="Ir a imágenes">
-        <span>IMÁGENES</span>
+      
+      <a href="IMAGENES/IMAGENES.HTML" class="portfolio-card">
+        <div class="portfolio-image">
+          <img src="images-index/imagenes.png" alt="Ir a imágenes">
+          <div class="portfolio-overlay">
+            <i class="fas fa-images"></i>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <h3>IMÁGENES</h3>
+          <p>Fotografías profesionales y sesiones de estudio</p>
+          <span class="portfolio-link">Ver galería <i class="fas fa-arrow-right"></i></span>
+        </div>
       </a>
-    </main>
+      
+      <div class="portfolio-card cta-card">
+        <div class="portfolio-content">
+          <h3>¿Listo para tu próximo proyecto?</h3>
+          <p>Contáctame y hablemos sobre cómo puedo hacer que tu evento sea inolvidable</p>
+          <a href="#contacto" class="btn-primary">
+            <i class="fas fa-envelope"></i> Contactar Ahora
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
 
-  </body>
-  </html>
+  <!-- Sección de contacto (simplificada) -->
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <h2 class="section-title">Contáctame <span class="highlight">Ahora</span></h2>
+      <p class="section-subtitle">Ponte en contacto directamente para consultas, presupuestos o más información</p>
+      
+      <div class="contacto-container">
+        <div class="contacto-info">
+          <div class="info-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h4>Teléfono / WhatsApp</h4>
+              <p>+57 312 342 9413</p>
+              <a href="https://wa.me/3123429413" class="whatsapp-link" target="_blank">
+                <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
+              </a>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Ubicación</h4>
+              <p>Colombia</p>
+              <p class="location-detail">Servicios disponibles en todo el país</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Horario de Atención</h4>
+              <p>Lunes a Viernes: todo el dia</p>
+              <p>Sábados: 10am - 2pm</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contacto-redes">
+          <h3>Conéctate en redes sociales</h3>
+          <p>Sigue mi trabajo y mantente actualizado con mis últimos proyectos</p>
+          <div class="redes-contacto">
+            <a href="https://www.facebook.com/Lacontersdj" target="_blank" class="red-social">
+              <i class="fab fa-facebook-f"></i>
+              <span>Facebook</span>
+            </a>
+            <a href="instagram.com/Lacontersmusic" target="_blank" class="red-social">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2F%40Lacontersmusic%2Fvideos%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExUUdIWTZrSEJPZDhhcmtDNXNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR5-ZPL_2Ut78dZvyYADYfE72-w7PRi-jC4lupXMxdv7dFNe-Rw7K8FKAaKWJQ_aem_b7fqkY-df485KmQNA5qKvw&h=AT3TzNMjCYrrCX5M38mPOd008Qaqd4AhjbTIVaK6EakeJhCsTtoi_8xjofpFivFJErqDsFeEuRjixTUYwHRyQ27LWJGwz9Hlc8_iP351eKlr2GItrh3qMpwxqPJNaE9GM62tkw" target="_blank" class="red-social">
+              <i class="fab fa-youtube"></i>
+              <span>YouTube</span>
+            </a>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images-index/icono.png" alt="Logo Laconters Music">
+          <h3>Laconters Music</h3>
+          <p>Producción multimedia profesional</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Enlaces Rápidos</h4>
+          <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="VIDEOS/videos.html">Videos</a></li>
+            <li><a href="IMAGENES/IMAGENES.HTML">Imágenes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-social">
+          <h4>Sígueme</h4>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/Lacontersdj" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/3123429413" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-soundcloud"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2023 Laconters Music. Todos los derechos reservados.</p>
+        <p>Diseñado con <i class="fas fa-heart"></i> para amantes de la música y multimedia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/3123429413" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts externos -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  
+  <!-- Script principal -->
+  <script>
+    // script.js - Script para la funcionalidad y animaciones
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Inicializar partículas de fondo
+      if (typeof particlesJS !== 'undefined') {
+        particlesJS('particles-js', {
+          particles: {
+            number: { value: 80, density: { enable: true, value_area: 800 } },
+            color: { value: "#00ff73" },
+            shape: { type: "circle" },
+            opacity: { value: 0.5, random: true },
+            size: { value: 3, random: true },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#005eff",
+              opacity: 0.2,
+              width: 1
+            },
+            move: {
+              enable: true,
+              speed: 2,
+              direction: "none",
+              random: true,
+              straight: false,
+              out_mode: "out",
+              bounce: false
+            }
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: { enable: true, mode: "repulse" },
+              onclick: { enable: true, mode: "push" }
+            }
+          }
+        });
+      }
+
+      // Animación de scroll suave para enlaces internos
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          
+          // Solo aplicar si es un enlace interno (no es un enlace externo o a otra página)
+          if (href !== '#' && href.startsWith('#')) {
+            e.preventDefault();
+            
+            const targetId = href.substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+              });
+            }
+          }
+        });
+      });
+
+      // Efecto de aparición al hacer scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+          }
+        });
+      }, observerOptions);
+
+      // Observar elementos para animación
+      document.querySelectorAll('.servicio-card, .portfolio-card, .info-item, .red-social').forEach(el => {
+        observer.observe(el);
+      });
+
+      // Añadir clase de animación después de un retraso para algunos elementos
+      setTimeout(() => {
+        document.querySelector('.hero-text')?.classList.add('animate-in');
+      }, 300);
+      
+      setTimeout(() => {
+        document.querySelector('.multimedia-animation')?.classList.add('animate-in');
+      }, 600);
+
+      // Efecto de escritura en el título
+      const title = document.querySelector('.hero-text h2');
+      if (title) {
+        const text = title.innerHTML;
+        title.innerHTML = '';
+        
+        let i = 0;
+        const typeWriter = () => {
+          if (i < text.length) {
+            title.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 50);
+          }
+        };
+        
+        // Iniciar efecto después de 1 segundo
+        setTimeout(typeWriter, 1000);
+      }
+      
+      // Añadir animación CSS para elementos que aparecen
+      const style = document.createElement('style');
+      style.textContent = `
+        .animate-in {
+          animation: fadeInUp 0.8s ease forwards;
+          opacity: 0;
+        }
+        
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        /* Animación para las ondas de sonido */
+        .sound-waves .wave {
+          animation: soundWave 2s ease-in-out infinite;
+        }
+        
+        .sound-waves .wave:nth-child(2) {
+          animation-delay: 0.3s;
+        }
+        
+        .sound-waves .wave:nth-child(3) {
+          animation-delay: 0.6s;
+        }
+        
+        @keyframes soundWave {
+          0%, 100% { height: 10px; opacity: 0.5; }
+          50% { height: 40px; opacity: 1; }
+        }
+        
+        /* Animación para los iconos flotantes */
+        .camera-icon, .video-icon, .music-icon {
+          animation: floatIcon 3s ease-in-out infinite;
+        }
+        
+        .video-icon {
+          animation-delay: 0.5s;
+        }
+        
+        .music-icon {
+          animation-delay: 1s;
+        }
+        
+        @keyframes floatIcon {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-15px); }
+        }
+      `;
+      document.head.appendChild(style);
+    });
+  </script>
+</body>
+</html>
